@@ -2,7 +2,7 @@
 
 ## 🌠 A Cosmic Falling-Tetrimino Game Made for Offline Play on PC and Mobile Devices.
 
-# ⚠️ *MAJOR WIP — link is below but not functional yet*
+# ⚠️ *MAJOR WIP — link is below but not completely functional yet*
 
 [▶️ **Play STARFALL**](https://github.com/DragosDomini/STARFALL/blob/main/index.html)
 
