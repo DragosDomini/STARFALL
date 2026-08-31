@@ -148,12 +148,11 @@ We've got you covered.
 Your audio preferences are saved locally.
 
 ---
-
 📱 Controls
 
 🖥️ PC
 
-Action| Control
+Action| Key
 Move Left| "←"
 Move Right| "→"
 Soft Drop| "↓"
@@ -165,10 +164,9 @@ Pause| "ESC"
 
 STARFALL includes dedicated touch controls for mobile devices.
 
-Fullscreen is supported where available, and the game's controls remain accessible.
+Fullscreen is supported where available, with the game's controls remaining accessible.
 
-Because hiding the buttons would be a bit counterproductive.
-
+«Because hiding the buttons would be a bit counterproductive.»
 ---
 
 <p align="center">✦ © CyndyrAeternum 2026 — All Rights Reserved ✦
