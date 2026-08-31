@@ -4,7 +4,7 @@
 
 A cosmic falling-block game for PC and mobile devices.
 
-"▶️ Play STARFALL" (https://dragosdomini.github.io/STARFALL/)
+[▶️ Play STARFALL](https://dragosdomini.github.io/STARFALL/)
 
 ---
 
