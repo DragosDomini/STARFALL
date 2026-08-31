@@ -2,7 +2,8 @@
 
 A cosmic falling-block game for PC and mobile devices.
 
-[▶️ Play STARFALL](https://dragosdomini.github.io/STARFALL/)
+# MAJOR WIP - link is below but not functional yet
+[▶️ Play STARFALL](about:blank)
 
 ---
 
