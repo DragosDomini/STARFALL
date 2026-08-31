@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-labelledby="title desc">
+<title id="title">STARFALL Demon Shopkeeper</title><desc id="desc">A much larger, frightening dragon-like form of the STARFALL Nekodragon shopkeeper, wingless and wearing a torn white shirt, black vest and black tie.</desc>
+<defs>
+ <linearGradient id="dfur" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9c79ff"/><stop offset=".4" stop-color="#4c3a9b"/><stop offset="1" stop-color="#160f35"/></linearGradient>
+ <linearGradient id="dark" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#21182f"/><stop offset="1" stop-color="#050309"/></linearGradient>
+ <radialGradient id="eye"><stop stop-color="#ff9b18"/><stop offset=".42" stop-color="#ff5a00"/><stop offset=".78" stop-color="#d31800"/><stop offset="1" stop-color="#ff7b00"/></radialGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="24" stdDeviation="18" flood-color="#000" flood-opacity=".75"/></filter>
+ <filter id="glow"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <style>.ink{stroke:#0b0718;stroke-width:12;stroke-linejoin:round;stroke-linecap:round}.scar{stroke:#ff5a9d;stroke-width:7;fill:none;opacity:.72}.tear{fill:#0b0711;stroke:#0b0718;stroke-width:6}</style>
+</defs>
+<ellipse cx="450" cy="1010" rx="310" ry="42" fill="#ff3a68" opacity=".28"/>
+<g filter="url(#shadow)" class="ink">
+ <!-- massive dragon-like torso -->
+ <path fill="url(#dfur)" d="M245 570 Q450 500 655 570 L700 930 Q450 1005 200 930Z"/>
+ <!-- torn white shirt -->
+ <path fill="#eceaf1" d="M300 555 L450 660 L600 555 L625 855 Q450 900 275 855Z"/>
+ <path class="tear" d="M292 690L346 725L323 775L282 747Z"/><path class="tear" d="M608 690L554 725L577 775L618 747Z"/>
+ <!-- black vest -->
+ <path fill="url(#dark)" d="M274 600L405 691L420 874L275 850L250 670Z"/>
+ <path fill="url(#dark)" d="M626 600L495 691L480 874L625 850L650 670Z"/>
+ <!-- torn tie -->
+ <path fill="#05050b" d="M426 656L474 656L495 720L450 774L405 720Z"/><path fill="#05050b" d="M412 768L488 768L474 883L450 908L426 883Z"/>
+ <path class="tear" d="M423 820L450 845L438 892L416 871Z"/>
+ <!-- huge arms -->
+ <path fill="url(#dfur)" d="M255 590 Q125 650 145 880 Q165 935 225 896 L310 690Z"/>
+ <path fill="url(#dfur)" d="M645 590 Q775 650 755 880 Q735 935 675 896 L590 690Z"/>
+ <!-- long claws -->
+ <path fill="#c8a9ff" d="M169 875L112 930L183 907L144 973L230 910Z"/>
+ <path fill="#c8a9ff" d="M731 875L788 930L717 907L756 973L670 910Z"/>
+ <!-- neck -->
+ <path fill="url(#dfur)" d="M322 470L578 470L598 615Q450 690 302 615Z"/>
+ <!-- huge dragon head -->
+ <path fill="url(#dfur)" d="M130 260 Q170 105 450 72 Q730 105 770 260 L725 500 Q665 650 450 685 Q235 650 175 500Z"/>
+ <!-- ears -->
+ <path fill="#43338c" d="M185 315Q55 210 100 65Q230 108 305 250Z"/>
+ <path fill="#43338c" d="M715 315Q845 210 800 65Q670 108 595 250Z"/>
+ <!-- giant horns -->
+ <path fill="#e4dcff" d="M270 235Q205 95 300 0Q348 100 337 266Z"/>
+ <path fill="#e4dcff" d="M630 235Q695 95 600 0Q552 100 563 266Z"/>
+ <path fill="none" stroke="#9d8be0" stroke-width="9" d="M268 68L315 89M256 116L325 139M632 68L585 89M644 116L575 139"/>
+ <!-- angular cheek plates -->
+ <path fill="#30236d" d="M165 380L82 455L192 470L244 418Z"/><path fill="#30236d" d="M735 380L818 455L708 470L656 418Z"/>
+ <!-- eyes, orange black-hole -->
+ <g filter="url(#glow)">
+  <ellipse cx="285" cy="365" rx="82" ry="62" fill="#fff"/>
+  <ellipse cx="615" cy="365" rx="82" ry="62" fill="#fff"/>
+  <ellipse cx="285" cy="365" rx="46" ry="52" fill="url(#eye)"/>
+  <ellipse cx="615" cy="365" rx="46" ry="52" fill="url(#eye)"/>
+  <ellipse cx="285" cy="365" rx="18" ry="42" fill="#020107"/>
+  <ellipse cx="615" cy="365" rx="18" ry="42" fill="#020107"/>
+ </g>
+ <!-- monstrous muzzle -->
+ <path fill="#7964bc" d="M285 400Q450 340 615 400L590 545Q450 630 310 545Z"/>
+ <path fill="#120914" d="M392 410Q450 370 508 410Q485 450 450 465Q415 450 392 410Z"/>
+ <path fill="#08060c" d="M330 505Q450 462 570 505Q550 625 450 640Q350 625 330 505Z"><animate attributeName="d" values="M330 505Q450 462 570 505Q550 625 450 640Q350 625 330 505Z;M315 495Q450 430 585 495Q560 675 450 695Q340 675 315 495Z;M330 505Q450 462 570 505Q550 625 450 640Q350 625 330 505Z" dur=".3s" repeatCount="indefinite"/></path>
+ <!-- teeth -->
+ <path fill="#fff5dd" d="M346 510L370 516L362 566L340 536Z" stroke="none"/><path fill="#fff5dd" d="M398 494L420 501L415 565L394 527Z" stroke="none"/><path fill="#fff5dd" d="M502 494L480 501L485 565L506 527Z" stroke="none"/><path fill="#fff5dd" d="M554 510L530 516L538 566L560 536Z" stroke="none"/>
+ <!-- scars -->
+ <path class="scar" d="M220 448L180 490M232 462L190 510M680 448L720 490M668 462L710 510"/>
+ <!-- blink lids -->
+ <path fill="#4c3a9b" d="M205 340Q285 282 365 340L352 378Q282 340 218 378Z"><animate attributeName="d" values="M205 340Q285 282 365 340L352 378Q282 340 218 378Z;M205 360Q285 360 365 360L352 374Q282 374 218 374Z;M205 340Q285 282 365 340L352 378Q282 340 218 378Z" dur="3.4s" repeatCount="indefinite"/></path>
+ <path fill="#4c3a9b" d="M535 340Q615 282 695 340L682 378Q618 340 548 378Z"><animate attributeName="d" values="M535 340Q615 282 695 340L682 378Q618 340 548 378Z;M535 360Q615 360 695 360L682 374Q618 374 548 374Z;M535 340Q615 282 695 340L682 378Q618 340 548 378Z" dur="3.4s" begin=".16s" repeatCount="indefinite"/></path>
+</g>
+</svg>
