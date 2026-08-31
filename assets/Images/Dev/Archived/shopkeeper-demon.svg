@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 980" role="img" aria-labelledby="title desc">
+<title id="title">STARFALL Nekodragon Shopkeeper</title><desc id="desc">Detailed wingless blurple Nekodragon shopkeeper wearing a white dress shirt, black tie and black vest.</desc>
+<defs>
+ <linearGradient id="fur" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9187ff"/><stop offset=".45" stop-color="#5e55c8"/><stop offset="1" stop-color="#28245e"/></linearGradient>
+ <linearGradient id="furDark" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5148a8"/><stop offset="1" stop-color="#201c4d"/></linearGradient>
+ <linearGradient id="vest" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#24233b"/><stop offset="1" stop-color="#090912"/></linearGradient>
+ <linearGradient id="shirt" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#d9d7e4"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#000" flood-opacity=".55"/></filter>
+ <filter id="soft"><feGaussianBlur stdDeviation="9"/></filter>
+ <style>
+  .ink{stroke:#141126;stroke-width:9;stroke-linejoin:round;stroke-linecap:round}
+  .detail{stroke:#2b255e;stroke-width:7;fill:none;stroke-linecap:round}
+  .shine{stroke:#c9c4ff;stroke-width:5;fill:none;opacity:.7;stroke-linecap:round}
+ </style>
+</defs>
+<ellipse cx="380" cy="900" rx="235" ry="34" fill="#7a5cff" opacity=".2" filter="url(#soft)"/>
+<g filter="url(#shadow)" class="ink">
+ <!-- torso -->
+ <path fill="url(#furDark)" d="M218 528 Q380 474 542 528 L575 830 Q380 885 185 830Z"/>
+ <!-- white dress shirt -->
+ <path fill="url(#shirt)" d="M282 516 L380 590 L478 516 L498 780 Q380 816 262 780Z"/>
+ <!-- collar -->
+ <path fill="#fff" d="M286 515 L380 589 L342 632 L277 553Z"/>
+ <path fill="#fff" d="M474 515 L380 589 L418 632 L483 553Z"/>
+ <!-- black tie -->
+ <path fill="#11111c" d="M363 581 L397 581 L415 640 L380 678 L345 640Z"/>
+ <path fill="#0a0a12" d="M350 674 L410 674 L397 781 L380 798 L363 781Z"/>
+ <!-- black vest -->
+ <path fill="url(#vest)" d="M262 555 L337 623 L350 790 L258 778 L239 606Z"/>
+ <path fill="url(#vest)" d="M498 555 L423 623 L410 790 L502 778 L521 606Z"/>
+ <path class="shine" d="M274 585L319 626M486 585L441 626"/>
+ <!-- vest buttons -->
+ <circle cx="327" cy="680" r="6" fill="#c7c3d4" stroke="none"/><circle cx="332" cy="719" r="6" fill="#c7c3d4" stroke="none"/><circle cx="433" cy="680" r="6" fill="#c7c3d4" stroke="none"/><circle cx="428" cy="719" r="6" fill="#c7c3d4" stroke="none"/>
+ <!-- arms -->
+ <path fill="url(#fur)" d="M226 552 Q145 610 156 764 Q171 799 205 773 L254 635Z"/>
+ <path fill="url(#fur)" d="M534 552 Q615 610 604 764 Q589 799 555 773 L506 635Z"/>
+ <path class="detail" d="M190 678Q180 725 190 757M570 678Q580 725 570 757"/>
+ <!-- neck -->
+ <path fill="url(#fur)" d="M315 445 L445 445 L452 548 Q380 575 308 548Z"/>
+ <!-- head silhouette -->
+ <path fill="url(#fur)" d="M173 214 Q204 112 380 92 Q556 112 587 214 L565 421 Q526 527 380 560 Q234 527 195 421Z"/>
+ <!-- ears -->
+ <path fill="#6258c3" d="M205 254 Q105 170 141 65 Q237 98 286 205Z"/>
+ <path fill="#6258c3" d="M555 254 Q655 170 619 65 Q523 98 474 205Z"/>
+ <path fill="#c39aff" d="M190 181 Q158 135 165 108 Q208 130 241 193Z" stroke-width="5"/>
+ <path fill="#c39aff" d="M570 181 Q602 135 595 108 Q552 130 519 193Z" stroke-width="5"/>
+ <!-- horns -->
+ <path fill="#dedbff" d="M256 181 Q221 84 291 25 Q316 99 304 198Z"/>
+ <path fill="#dedbff" d="M504 181 Q539 84 469 25 Q444 99 456 198Z"/>
+ <path class="shine" d="M267 78L300 91M259 116L303 128M493 78L460 91M501 116L457 128"/>
+ <!-- forehead crest -->
+ <path fill="#3b347f" d="M333 136 Q380 98 427 136 L414 206 Q380 224 346 206Z"/>
+ <path class="shine" d="M380 125V194"/>
+ <!-- cheek tufts -->
+ <path fill="#39327d" d="M203 343 Q145 383 199 478 L247 438 Q213 394 257 355Z"/>
+ <path fill="#39327d" d="M557 343 Q615 383 561 478 L513 438 Q547 394 503 355Z"/>
+ <!-- eyes: white sclera, blue iris, black pupil -->
+ <g>
+  <path fill="#fff" d="M220 306 Q268 263 328 310 Q278 369 220 323Z"/>
+  <path fill="#fff" d="M432 310 Q492 263 540 306 L540 323 Q482 369 432 310Z"/>
+  <ellipse cx="278" cy="316" rx="25" ry="29" fill="#54a7ff" stroke="#16142d" stroke-width="6"/>
+  <ellipse cx="482" cy="316" rx="25" ry="29" fill="#54a7ff" stroke="#16142d" stroke-width="6"/>
+  <ellipse cx="278" cy="318" rx="10" ry="20" fill="#080810" stroke="none"/>
+  <ellipse cx="482" cy="318" rx="10" ry="20" fill="#080810" stroke="none"/>
+  <circle cx="286" cy="307" r="6" fill="#fff" stroke="none"/><circle cx="490" cy="307" r="6" fill="#fff" stroke="none"/>
+  <!-- blink animation -->
+  <path fill="url(#fur)" stroke="none" d="M215 306Q270 263 330 309L323 326Q274 293 222 326Z"><animate attributeName="d" values="M215 306Q270 263 330 309L323 326Q274 293 222 326Z;M215 316Q270 316 330 316L323 324Q274 324 222 324Z;M215 306Q270 263 330 309L323 326Q274 293 222 326Z" dur="4.7s" repeatCount="indefinite"/></path>
+  <path fill="url(#fur)" stroke="none" d="M430 309Q490 263 545 306L538 326Q486 293 437 326Z"><animate attributeName="d" values="M430 309Q490 263 545 306L538 326Q486 293 437 326Z;M430 316Q490 316 545 316L538 324Q486 324 437 324Z;M430 309Q490 263 545 306L538 326Q486 293 437 326Z" dur="4.7s" begin=".13s" repeatCount="indefinite"/></path>
+ </g>
+ <!-- muzzle and actual mouth -->
+ <path fill="#9b92e5" d="M292 352 Q380 315 468 352 L451 440 Q380 480 309 440Z"/>
+ <path fill="#211c43" d="M354 357 Q380 339 406 357 Q380 382 354 357Z" stroke-width="6"/>
+ <path class="detail" d="M380 382V411"/>
+ <path fill="#171323" d="M330 420 Q380 404 430 420 Q417 474 380 480 Q343 474 330 420Z">
+  <animate attributeName="d" values="M330 420 Q380 404 430 420 Q417 474 380 480 Q343 474 330 420Z;M326 416 Q380 392 434 416 Q420 500 380 506 Q340 500 326 416Z;M330 420 Q380 404 430 420 Q417 474 380 480 Q343 474 330 420Z" dur=".28s" repeatCount="indefinite"/>
+ </path>
+ <path fill="#f7f4ff" d="M343 430 Q380 419 417 430 L408 445 Q380 438 352 445Z" stroke="none"/>
+ <path fill="#6e5bc7" d="M351 464 Q380 451 409 464 Q390 480 380 480 Q370 480 351 464Z" stroke="none"/>
+ <!-- facial markings -->
+ <path class="shine" d="M214 373L266 388M218 402L260 410M546 373L494 388M542 402L500 410"/>
+ <!-- brow accents -->
+ <path fill="none" stroke="#c0b9ff" stroke-width="8" d="M222 276Q274 241 324 274M436 274Q486 241 538 276"/>
+</g>
+</svg>
