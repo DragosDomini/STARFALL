@@ -1,5 +1,3 @@
-🌌 STARFALL
-
 «DROP THE BLOCKS. CLEAR THE LINES. SURVIVE THE FALL.»
 
 A cosmic falling-block game for PC and mobile devices.
