@@ -1,8 +1,8 @@
-«DROP THE BLOCKS. CLEAR THE LINES. SURVIVE THE FALL.»
+# DROP THE BLOCKS. CLEAR THE LINES. SURVIVE THE FALL.
 
 ## A cosmic falling-block game for PC and mobile devices.
 
-# MAJOR WIP - link is below but not functional yet
+# *MAJOR WIP - link is below but not functional yet*
 [▶️ Play STARFALL](about:blank)
 
 ---
