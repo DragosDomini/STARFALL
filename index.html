@@ -2,109 +2,671 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+
 <meta name="theme-color" content="#090615">
+
 <link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="style.css">
+
 <title>STARFALL</title>
 </head>
+
 <body>
+
 <div id="starfield" aria-hidden="true"></div>
+
 <main id="app">
+
+<!-- =========================
+     MAIN MENU
+========================= -->
+
 <section id="menu" class="screen active cosmic-screen">
+
   <div class="menu-card">
-    <img class="title-image" src="assets/Images/logo.png" alt="STARFALL">
-    <p class="tagline">DROP THE BLOCKS.<br>CLEAR THE LINES.<br>SURVIVE THE FALL.</p>
-    <p class="subtitle">A cosmic falling-tetrimino game for PC and mobile.</p>
+
+    <img
+      class="title-image"
+      src="assets/Images/logo.png"
+      alt="STARFALL"
+    >
+
+    <p class="tagline">
+      DROP THE BLOCKS.<br>
+      CLEAR THE LINES.<br>
+      SURVIVE THE FALL.
+    </p>
+
+    <p class="subtitle">
+      A cosmic falling-tetrimino game for PC and mobile.
+    </p>
+
     <div class="menu-buttons">
-      <button class="primary" data-action="play">▶ PLAY</button>
-      <button data-action="shop">✦ COSMIC SHOP</button>
-      <button data-action="settings">⚙ SETTINGS</button>
-      <button data-action="highscores">🏆 HIGH SCORES</button>
+
+      <button class="primary" data-action="play">
+        ▶ PLAY
+      </button>
+
+      <button data-action="shop">
+        ✦ COSMIC SHOP
+      </button>
+
+      <button data-action="settings">
+        ⚙ SETTINGS
+      </button>
+
+      <button data-action="highscores">
+        🏆 HIGH SCORES
+      </button>
+
     </div>
+
   </div>
+
 </section>
+
+
+<!-- =========================
+     GAME
+========================= -->
 
 <section id="gameScreen" class="screen game-screen">
+
   <header class="game-hud">
-    <div class="hud-stat"><span>SCORE</span><b id="score">0</b></div>
-    <div class="hud-stat"><span>LEVEL</span><b id="level">1</b></div>
-    <div class="hud-stat"><span>LINES</span><b id="lines">0</b></div>
-    <div class="hud-stat"><span>COMBO</span><b id="combo">0</b></div>
-    <button data-action="pause">⏸</button><button data-action="menu">MENU</button>
+
+    <div class="hud-stat">
+      <span>SCORE</span>
+      <b id="score">0</b>
+    </div>
+
+    <div class="hud-stat">
+      <span>LEVEL</span>
+      <b id="level">1</b>
+    </div>
+
+    <div class="hud-stat">
+      <span>LINES</span>
+      <b id="lines">0</b>
+    </div>
+
+    <div class="hud-stat">
+      <span>COMBO</span>
+      <b id="combo">0</b>
+    </div>
+
+    <button data-action="pause">⏸</button>
+    <button data-action="menu">MENU</button>
+
   </header>
+
+
   <div id="gameArea">
-    <div class="board-frame"><canvas id="board" width="300" height="600"></canvas></div>
-    <aside class="next-panel"><h2>✦ NEXT</h2><canvas id="next" width="120" height="120"></canvas><p>✦ <b id="stardust">0</b></p></aside>
+
+    <div class="board-frame">
+
+      <canvas
+        id="board"
+        width="300"
+        height="600">
+      </canvas>
+
+    </div>
+
+
+    <aside class="next-panel">
+
+      <h2>✦ NEXT</h2>
+
+      <canvas
+        id="next"
+        width="120"
+        height="120">
+      </canvas>
+
+      <p>
+        ✦ <b id="stardust">0</b>
+      </p>
+
+    </aside>
+
   </div>
-  <div class="mobile-controls">
-    <button data-key="ArrowLeft">◀</button><button data-key="ArrowUp">↻</button><button data-key="ArrowRight">▶</button>
-    <button data-key="ArrowDown">▼</button><button data-key=" ">DROP</button>
+
+
+  <!-- MOBILE CONTROLS -->
+
+  <div
+    id="mobileControls"
+    class="mobile-controls"
+    aria-label="Mobile game controls">
+
+    <div class="control-row">
+
+      <button data-key="ArrowLeft">
+        LEFT
+      </button>
+
+      <button data-key=" ">
+        DROP
+      </button>
+
+      <button data-key="ArrowRight">
+        RIGHT
+      </button>
+
+    </div>
+
+    <div class="control-row">
+
+      <button data-key="ArrowDown">
+        SLOW
+      </button>
+
+      <button data-key="ArrowUp">
+        ROTATE
+      </button>
+
+    </div>
+
   </div>
-  <div id="pauseOverlay" class="overlay hidden"><div class="overlay-card"><h2>PAUSED</h2><button data-action="resume">RESUME</button><button data-action="menu">MAIN MENU</button></div></div>
-  <div id="gameOverOverlay" class="game-over-overlay hidden" aria-live="assertive">
+
+
+  <!-- DESKTOP CONTROLS -->
+
+  <div
+    id="keyboardControls"
+    class="keyboard-controls">
+
+    <span><kbd>A</kbd> / <kbd>←</kbd> LEFT</span>
+    <span><kbd>D</kbd> / <kbd>→</kbd> RIGHT</span>
+    <span><kbd>E</kbd> ROTATE</span>
+    <span><kbd>R</kbd> HARD DROP</span>
+    <span><kbd>S</kbd> / <kbd>↓</kbd> SLOW</span>
+    <span><kbd>ESC</kbd> PAUSE</span>
+
+  </div>
+
+
+  <!-- PAUSE -->
+
+  <div
+    id="pauseOverlay"
+    class="overlay hidden">
+
+    <div class="overlay-card">
+
+      <h2>PAUSED</h2>
+
+      <button data-action="resume">
+        RESUME
+      </button>
+
+      <button data-action="menu">
+        MAIN MENU
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- GAME OVER -->
+
+  <div
+    id="gameOverOverlay"
+    class="game-over-overlay hidden"
+    aria-live="assertive">
+
     <div class="caution-line"></div>
+
     <div class="game-over-card">
-      <img src="assets/Images/game-over-title.svg" class="game-over-title" alt="GAME OVER">
-      <p class="game-over-score">SCORE <b id="finalScore">0</b></p>
-      <div id="highscoreEntry" class="highscore-entry hidden">
-        <label for="highscoreName">NEW HIGH SCORE</label>
-        <div class="name-entry-row"><input id="highscoreName" maxlength="8" minlength="1" pattern="[A-Za-z0-9 ]{1,8}" autocomplete="off" spellcheck="false" aria-label="High score name, up to 8 characters"><button data-action="submitScore">ENTER</button></div>
-        <small>Enter up to 8 characters.</small>
+
+      <img
+        src="assets/Images/game-over-title.svg"
+        class="game-over-title"
+        alt="GAME OVER">
+
+      <p class="game-over-score">
+        SCORE <b id="finalScore">0</b>
+      </p>
+
+
+      <div
+        id="highscoreEntry"
+        class="highscore-entry hidden">
+
+        <label for="highscoreName">
+          NEW HIGH SCORE
+        </label>
+
+        <div class="name-entry-row">
+
+          <input
+            id="highscoreName"
+            maxlength="8"
+            minlength="1"
+            pattern="[A-Za-z0-9 ]{1,8}"
+            autocomplete="off"
+            spellcheck="false"
+            aria-label="High score name, up to 8 characters">
+
+          <button data-action="submitScore">
+            ENTER
+          </button>
+
+        </div>
+
+        <small>
+          Enter up to 8 characters.
+        </small>
+
       </div>
-      <div class="game-over-actions"><button class="primary" data-action="restart">↻ PLAY AGAIN</button><button data-action="menu">MAIN MENU</button></div>
+
+
+      <div class="game-over-actions">
+
+        <button
+          class="primary"
+          data-action="restart">
+          ↻ PLAY AGAIN
+        </button>
+
+        <button data-action="menu">
+          MAIN MENU
+        </button>
+
+      </div>
+
     </div>
+
   </div>
+
 </section>
 
-<section id="highscores" class="screen highscores-screen">
-  <button class="back" data-action="menu">← MAIN MENU</button>
+
+<!-- =========================
+     HIGH SCORES
+========================= -->
+
+<section
+  id="highscores"
+  class="screen highscores-screen">
+
+  <button
+    class="back"
+    data-action="menu">
+    ← MAIN MENU
+  </button>
+
   <div class="highscores-card">
+
     <h1>🏆 HIGH SCORES</h1>
-    <p class="highscores-subtitle">The galaxy remembers.</p>
+
+    <p class="highscores-subtitle">
+      The galaxy remembers.
+    </p>
+
     <div id="highscoreList"></div>
-    <button data-action="clearScores" class="danger-button">🗑 CLEAR HIGH SCORES</button>
+
+    <button
+      data-action="clearScores"
+      class="danger-button">
+      🗑 CLEAR HIGH SCORES
+    </button>
+
   </div>
+
 </section>
 
-<section id="shop" class="screen shop-screen">
-  <button class="back" data-action="menu">← MAIN MENU</button>
+
+<!-- =========================
+     SHOP
+========================= -->
+
+<section
+  id="shop"
+  class="screen shop-screen">
+
+  <button
+    class="back"
+    data-action="menu">
+    ← MAIN MENU
+  </button>
+
+
   <div id="shopScene">
-    <div id="shopkeeper" tabindex="0" role="button" aria-label="Shopkeeper"><img class="shopkeeper-art" src="assets/Images/shopkeeper.svg" alt="Nekodragon shopkeeper"></div>
+
+    <div
+      id="shopkeeper"
+      tabindex="0"
+      role="button"
+      aria-label="Shopkeeper">
+
+      <img
+        class="shopkeeper-art"
+        src="assets/Images/shopkeeper.svg"
+        alt="Cosmic shopkeeper">
+
+    </div>
+
+
     <div id="shopStand">
-      <div class="stand-glow"></div><h1>✦ COSMIC SHOP ✦</h1><p>STARDUST: <b id="shopDust">0</b></p>
-      <div class="theme-grid"><button data-theme="Classic">🌑 CLASSIC</button><button data-theme="Nebula">🌌 NEBULA</button><button data-theme="Supernova">💥 SUPERNOVA</button><button data-theme="Void">🕳️ VOID</button><button data-theme="Starlight">🌅 STARLIGHT</button></div>
-      <p class="credit">made with 💙 by: <a href="https://guns.lol/cyndyraeternum" target="_blank" rel="noopener">CyndyrAeternum</a></p>
-    </div>
-  </div>
-  <div id="dialogue" class="dialogue hidden"><div id="dialogueText"></div><button id="dialogueContinue">▼</button></div>
-  <div id="blurpleFlash" class="blurple-flash"></div>
-</section>
 
-<section id="settings" class="screen settings-screen">
-  <button class="back" data-action="menu">← MAIN MENU</button>
-  <div class="settings-card"><h1>⚙ SETTINGS</h1>
-    <div class="setting-row"><span>🎵 Music</span><label class="switch"><input id="musicToggle" type="checkbox"><span></span></label></div>
-    <div class="setting-row"><span>🔊 SFX</span><label class="switch"><input id="sfxToggle" type="checkbox"><span></span></label></div>
-    <div class="volume-row"><label for="musicVolume">Music Volume</label><input id="musicVolume" type="range" min="0" max="100" value="45"><output id="musicVolumeValue">45%</output></div>
-    <div class="volume-row"><label for="sfxVolume">SFX Volume</label><input id="sfxVolume" type="range" min="0" max="100" value="32"><output id="sfxVolumeValue">32%</output></div>
-    <button class="mute-button" data-action="mute">🔇 MUTE</button>
-    <div class="save-data-panel">
-      <h2>💾 Save Data</h2>
-      <p>Export your progress to a portable <code>.sav</code> file, or load one back in.</p>
-      <div class="save-actions">
-        <button data-action="exportSave">📤 EXPORT SAVE</button>
-        <button data-action="importSave">📥 IMPORT SAVE</button>
-        <input id="saveFileInput" type="file" accept=".sav,application/octet-stream,text/plain" hidden>
+      <div class="stand-glow"></div>
+
+      <h1>✦ COSMIC SHOP ✦</h1>
+
+      <p>
+        STARDUST:
+        <b id="shopDust">0</b>
+      </p>
+
+
+      <div class="theme-grid">
+
+        <button
+          data-theme="Classic"
+          data-cost="0">
+          🌑 CLASSIC
+          <small>FREE</small>
+        </button>
+
+        <button
+          data-theme="Nebula"
+          data-cost="100">
+          🌌 NEBULA
+          <small>100 ✦</small>
+        </button>
+
+        <button
+          data-theme="Supernova"
+          data-cost="250">
+          💥 SUPERNOVA
+          <small>250 ✦</small>
+        </button>
+
+        <button
+          data-theme="Void"
+          data-cost="400">
+          🕳️ VOID
+          <small>400 ✦</small>
+        </button>
+
+        <button
+          data-theme="Starlight"
+          data-cost="650">
+          🌅 STARLIGHT
+          <small>650 ✦</small>
+        </button>
+
       </div>
-      <small>STARFALL saves are Base64-encoded and Caesar-ciphered for casual obfuscation.</small>
+
+
+      <!-- DEMON MODE IS NOT SHOWN UNTIL UNLOCKED -->
+
+      <div
+        id="demonShopItem"
+        class="demon-shop-item hidden">
+
+        <button
+          data-action="demonMode">
+          ☠ DEMON MODE
+          <small>UNLOCKED</small>
+        </button>
+
+      </div>
+
+
+      <p class="credit">
+        made with 💙 by:
+        <a
+          href="https://guns.lol/cyndyraeternum"
+          target="_blank"
+          rel="noopener">
+          CyndyrAeternum
+        </a>
+      </p>
+
     </div>
-    <button data-action="achievements">🏆 ACHIEVEMENTS</button>
+
   </div>
+
+
+  <div
+    id="dialogue"
+    class="dialogue hidden">
+
+    <div id="dialogueText"></div>
+
+    <button id="dialogueContinue">
+      ▼
+    </button>
+
+  </div>
+
+
+  <div
+    id="blurpleFlash"
+    class="blurple-flash">
+  </div>
+
 </section>
 
-<section id="achievements" class="screen achievements-screen"><button class="back" data-action="settings">← SETTINGS</button><h1>🏆 ACHIEVEMENTS</h1><div id="achievementList"></div></section>
+
+<!-- =========================
+     SETTINGS
+========================= -->
+
+<section
+  id="settings"
+  class="screen settings-screen">
+
+  <button
+    class="back"
+    data-action="menu">
+    ← MAIN MENU
+  </button>
+
+
+  <div class="settings-card">
+
+    <h1>⚙ SETTINGS</h1>
+
+
+    <div class="setting-row">
+
+      <span>🎵 Music</span>
+
+      <label class="switch">
+
+        <input
+          id="musicToggle"
+          type="checkbox">
+
+        <span></span>
+
+      </label>
+
+    </div>
+
+
+    <div class="setting-row">
+
+      <span>🔊 SFX</span>
+
+      <label class="switch">
+
+        <input
+          id="sfxToggle"
+          type="checkbox">
+
+        <span></span>
+
+      </label>
+
+    </div>
+
+
+    <div class="volume-row">
+
+      <label for="musicVolume">
+        Music Volume
+      </label>
+
+      <input
+        id="musicVolume"
+        type="range"
+        min="0"
+        max="100"
+        value="45">
+
+      <output id="musicVolumeValue">
+        45%
+      </output>
+
+    </div>
+
+
+    <div class="volume-row">
+
+      <label for="sfxVolume">
+        SFX Volume
+      </label>
+
+      <input
+        id="sfxVolume"
+        type="range"
+        min="0"
+        max="100"
+        value="32">
+
+      <output id="sfxVolumeValue">
+        32%
+      </output>
+
+    </div>
+
+
+    <button
+      class="mute-button"
+      data-action="mute">
+      🔇 MUTE
+    </button>
+
+
+    <!-- VISUAL SETTINGS -->
+
+    <div class="settings-section">
+
+      <h2>DISPLAY</h2>
+
+
+      <div class="setting-row">
+
+        <span>🧊 3D Blocks</span>
+
+        <label class="switch">
+
+          <input
+            id="threeDToggle"
+            type="checkbox"
+            checked>
+
+          <span></span>
+
+        </label>
+
+      </div>
+
+
+      <div class="setting-row">
+
+        <span>⚠ Photo Sensitivity Mode</span>
+
+        <label class="switch">
+
+          <input
+            id="photoSensitivityToggle"
+            type="checkbox">
+
+          <span></span>
+
+        </label>
+
+      </div>
+
+      <small class="setting-description">
+        Disables flashing, shaking, and other intense visual effects.
+      </small>
+
+    </div>
+
+
+    <!-- SAVE DATA -->
+
+    <div class="save-data-panel">
+
+      <h2>💾 Save Data</h2>
+
+      <p>
+        Export your STARFALL progress to a portable save file,
+        or load one back in.
+      </p>
+
+      <div class="save-actions">
+
+        <button data-action="exportSave">
+          📤 EXPORT SAVE
+        </button>
+
+        <button data-action="importSave">
+          📥 IMPORT SAVE
+        </button>
+
+        <input
+          id="saveFileInput"
+          type="file"
+          accept=".sav,application/octet-stream,text/plain"
+          hidden>
+
+      </div>
+
+    </div>
+
+
+    <button data-action="achievements">
+      🏆 ACHIEVEMENTS
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     ACHIEVEMENTS
+========================= -->
+
+<section
+  id="achievements"
+  class="screen achievements-screen">
+
+  <button
+    class="back"
+    data-action="settings">
+    ← SETTINGS
+  </button>
+
+  <h1>🏆 ACHIEVEMENTS</h1>
+
+  <div id="achievementList"></div>
+
+</section>
+
 </main>
+
 <script src="game.js"></script>
+
 </body>
 </html>
