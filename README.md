@@ -1,6 +1,6 @@
 # DROP THE BLOCKS. CLEAR THE LINES. SURVIVE THE FALL.
 
-## A cosmic falling-block game for PC and mobile devices.
+## A Cosmic Falling-Tetrimino Game Made for Offline Play on PC and Mobile Devices.
 
 # *MAJOR WIP - link is below but not functional yet*
 [▶️ Play STARFALL](about:blank)
