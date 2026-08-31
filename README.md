@@ -1,6 +1,6 @@
-# 🌌 DROP THE BLOCKS.
-# 🌌 CLEAR THE LINES.
-# 🌌 SURVIVE THE MADNESS.
+# 🌌 DROP THE BLOCKS.\n
+ 🌌 CLEAR THE LINES.\n
+ 🌌 SURVIVE THE MADNESS.\n
 
 ## 🌠 A Cosmic Falling-Tetrimino Game Made for Offline Play on PC and Mobile Devices.
 
