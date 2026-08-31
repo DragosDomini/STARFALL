@@ -1,4 +1,6 @@
-# 🌌 DROP THE BLOCKS. CLEAR THE LINES. SURVIVE THE FALL.
+# 🌌 DROP THE BLOCKS.
+# 🌌 CLEAR THE LINES.
+# 🌌 SURVIVE THE MADNESS.
 
 ## 🌠 A Cosmic Falling-Tetrimino Game Made for Offline Play on PC and Mobile Devices.
 
@@ -30,6 +32,27 @@ Move things around. Rotate things. Clear lines. Try not to create a towering mon
 The higher your level gets, the faster everything comes down.
 
 Good luck with that.
+
+---
+
+# 🎮 Controls
+
+## 🖥️ PC
+
+- ⬅️ **Move Left:** `←`
+- ➡️ **Move Right:** `→`
+- ⬇️ **Soft Drop:** `↓`
+- 🔄 **Rotate:** `↑`
+- 💨 **Hard Drop:** `SPACE`
+- ⏸️ **Pause:** `ESC`
+
+## 📱 Mobile
+
+STARFALL includes dedicated touch controls for mobile devices.
+
+Fullscreen is supported where available, with the game's controls remaining accessible.
+
+> 😏 *Because hiding the buttons would be a bit counterproductive.*
 
 ---
 
@@ -149,27 +172,6 @@ We've got you covered.
 - 🔇 **Mute:** Optional
 
 Your audio preferences are saved locally.
-
----
-
-# 🎮 Controls
-
-## 🖥️ PC
-
-- ⬅️ **Move Left:** `←`
-- ➡️ **Move Right:** `→`
-- ⬇️ **Soft Drop:** `↓`
-- 🔄 **Rotate:** `↑`
-- 💨 **Hard Drop:** `SPACE`
-- ⏸️ **Pause:** `ESC`
-
-## 📱 Mobile
-
-STARFALL includes dedicated touch controls for mobile devices.
-
-Fullscreen is supported where available, with the game's controls remaining accessible.
-
-> 😏 *Because hiding the buttons would be a bit counterproductive.*
 
 ---
 
