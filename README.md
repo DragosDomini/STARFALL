@@ -6,8 +6,7 @@
 [▶️ Play STARFALL](about:blank)
 
 ---
-
-🎮 Gameplay
+# Gameplay
 
 It's a falling-block game.
 
@@ -31,8 +30,7 @@ The higher your level gets, the faster everything comes down.
 Good luck with that.
 
 ---
-
-⭐ Progression
+# Progression
 
 STARFALL keeps track of how you're doing.
 
@@ -51,8 +49,7 @@ Stardust| ✅
 Stardust is the game's cosmetic currency. Earn it while playing and spend it in the Cosmic Shop.
 
 ---
-
-🏆 Achievements
+# Achievements
 
 There are achievements.
 
@@ -65,8 +62,7 @@ Some require a little more effort.
 Not every achievement is explained.
 
 ---
-
-🛍️ Cosmic Shop
+# Cosmic Shop
 
 Welcome to the Cosmic Shop.
 
@@ -91,7 +87,7 @@ Or don't. It's your Stardust.
 
 ---
 
-💙 The Shopkeeper
+# The Shopkeeper
 
 Need something from the shop?
 
@@ -107,16 +103,16 @@ Mostly.
 
 ---
 
-🔊 Audio
+# Audio
 
 STARFALL has music and sound effects for gameplay and interface interactions.
 
-🎵 Music
+## Music
 
 - Gameplay music
 - Game-end music
 
-🔊 Sound Effects
+## Sound Effects
 
 - Movement
 - Rotation
@@ -131,7 +127,7 @@ Music and SFX are controlled separately, because sometimes you want the music an
 
 ---
 
-⚙️ Settings
+# Settings
 
 Prefer your games quiet?
 
@@ -148,17 +144,16 @@ We've got you covered.
 Your audio preferences are saved locally.
 
 ---
-📱 Controls
+# Controls
 
 🖥️ PC
 
-Action| Key
-Move Left| "←"
-Move Right| "→"
-Soft Drop| "↓"
-Rotate| "↑"
-Hard Drop| "SPACE"
-Pause| "ESC"
+- Move Left: "←"
+- Move Right: "→"
+- Soft Drop: "↓"
+- Rotate: "↑"
+- Hard Drop: "SPACE"
+- Pause: "ESC"
 
 📱 Mobile
 
