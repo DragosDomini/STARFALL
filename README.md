@@ -4,7 +4,7 @@
 
 # ⚠️ *MAJOR WIP — link is below but not completely functional yet*
 
-[▶️ **Play STARFALL**]((https://dragosdomini.github.io/STARFALL/))
+[▶️ **Play STARFALL**](https://dragosdomini.github.io/STARFALL/)
 
 ---
 
