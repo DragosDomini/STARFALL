@@ -1,12 +1,14 @@
-# DROP THE BLOCKS. CLEAR THE LINES. SURVIVE THE FALL.
+# 🌌 DROP THE BLOCKS. CLEAR THE LINES. SURVIVE THE FALL.
 
-## A Cosmic Falling-Tetrimino Game Made for Offline Play on PC and Mobile Devices.
+## 🌠 A Cosmic Falling-Tetrimino Game Made for Offline Play on PC and Mobile Devices.
 
-# *MAJOR WIP - link is below but not functional yet*
-[▶️ Play STARFALL](about:blank)
+# ⚠️ *MAJOR WIP — link is below but not functional yet*
+
+[▶️ **Play STARFALL**](about:blank)
 
 ---
-# Gameplay
+
+# 🎮 Gameplay
 
 It's a falling-block game.
 
@@ -30,26 +32,29 @@ The higher your level gets, the faster everything comes down.
 Good luck with that.
 
 ---
-# Progression
+
+# ⭐ Progression
 
 STARFALL keeps track of how you're doing.
 
 Because apparently simply having fun wasn't enough.
 
-Statistic| Tracked
-Score| ✅
-High Score| ✅
-Level| ✅
-Lines Cleared| ✅
-Total Lines| ✅
-Current Combo| ✅
-Best Combo| ✅
-Stardust| ✅
+| 📊 Statistic | ✅ Tracked |
+|:---|:---:|
+| 🏅 Score | ✅ |
+| 🏆 High Score | ✅ |
+| 📈 Level | ✅ |
+| 🧱 Lines Cleared | ✅ |
+| 📊 Total Lines | ✅ |
+| 🔥 Current Combo | ✅ |
+| 💥 Best Combo | ✅ |
+| ✦ Stardust | ✅ |
 
-Stardust is the game's cosmetic currency. Earn it while playing and spend it in the Cosmic Shop.
+**Stardust** is the game's cosmetic currency. Earn it while playing and spend it in the Cosmic Shop.
 
 ---
-# Achievements
+
+# 🏆 Achievements
 
 There are achievements.
 
@@ -59,25 +64,27 @@ Some are earned through normal gameplay.
 
 Some require a little more effort.
 
-Not every achievement is explained.
+> 🔍 **Not every achievement is explained.**
 
 ---
-# Cosmic Shop
 
-Welcome to the Cosmic Shop.
+# 🛍️ Cosmic Shop
+
+Welcome to the **Cosmic Shop**.
 
 Spend your hard-earned Stardust on visual themes and give your game a little personality.
 
-✦ Available Themes
+## ✦ Available Themes
 
-Theme| Description
-🌑 Classic| A clean black background. Simple and reliable.
-🌌 Nebula| A starry blurple background with bright yellow stars.
-💥 Supernova| Reds, greens, and blues. Oh my.
-🕳️ Void| Purple and black. For when subtlety isn't the goal.
-🌅 Starlight| A soft, light-blue, almost-dawn sky filled with stars.
+| 🌌 Theme | 🎨 Description |
+|:---|:---|
+| 🌑 **Classic** | A clean black background. Simple and reliable. |
+| 🌌 **Nebula** | A starry blurple background with bright yellow stars. |
+| 💥 **Supernova** | Reds, greens, and blues. Oh my. |
+| 🕳️ **Void** | Purple and black. For when subtlety isn't the goal. |
+| 🌅 **Starlight** | A soft, light-blue, almost-dawn sky filled with stars. |
 
-Classic is unlocked by default.
+**Classic** is unlocked by default.
 
 The other themes can be purchased with Stardust.
 
@@ -87,47 +94,47 @@ Or don't. It's your Stardust.
 
 ---
 
-# The Shopkeeper
+# 💙 The Shopkeeper
 
 Need something from the shop?
 
-Then you'll be dealing with him.
+Then you'll be dealing with **him**.
 
-The shopkeeper is a Nekodragon with his own personality and a few opinions about the customers who wander in.
+The shopkeeper is a **Nekodragon** with his own personality and a few opinions about the customers who wander in.
 
 He's here to help.
 
 Mostly.
 
-«Please don't make me regret putting a shop in here.»
+> *"Please don't make me regret putting a shop in here."*
 
 ---
 
-# Audio
+# 🔊 Audio
 
 STARFALL has music and sound effects for gameplay and interface interactions.
 
-## Music
+## 🎵 Music
 
-- Gameplay music
-- Game-end music
+- 🎶 Gameplay music
+- 🏁 Game-end music
 
-## Sound Effects
+## 🔉 Sound Effects
 
-- Movement
-- Rotation
-- Dropping
-- Line clearing
-- Menu interactions
-- Pause
-- Game over
-- Dialogue
+- 👣 Movement
+- 🔄 Rotation
+- ⬇️ Dropping
+- ✨ Line clearing
+- 🖱️ Menu interactions
+- ⏸️ Pause
+- 💀 Game over
+- 💬 Dialogue
 
 Music and SFX are controlled separately, because sometimes you want the music and sometimes you just want to hear blocks making satisfying noises.
 
 ---
 
-# Settings
+# ⚙️ Settings
 
 Prefer your games quiet?
 
@@ -137,31 +144,33 @@ Prefer absolute silence?
 
 We've got you covered.
 
-- 🎵 Music: ON / OFF
-- 🔊 SFX: ON / OFF
-- 🔇 Mute: Optional
+- 🎵 **Music:** ON / OFF
+- 🔊 **SFX:** ON / OFF
+- 🔇 **Mute:** Optional
 
 Your audio preferences are saved locally.
 
 ---
-# Controls
 
-🖥️ PC
+# 🎮 Controls
 
-- Move Left: "←"
-- Move Right: "→"
-- Soft Drop: "↓"
-- Rotate: "↑"
-- Hard Drop: "SPACE"
-- Pause: "ESC"
+## 🖥️ PC
 
-📱 Mobile
+- ⬅️ **Move Left:** `←`
+- ➡️ **Move Right:** `→`
+- ⬇️ **Soft Drop:** `↓`
+- 🔄 **Rotate:** `↑`
+- 💨 **Hard Drop:** `SPACE`
+- ⏸️ **Pause:** `ESC`
+
+## 📱 Mobile
 
 STARFALL includes dedicated touch controls for mobile devices.
 
 Fullscreen is supported where available, with the game's controls remaining accessible.
 
-«Because hiding the buttons would be a bit counterproductive.»
+> 😏 *Because hiding the buttons would be a bit counterproductive.*
+
 ---
 
 <p align="center">✦ © CyndyrAeternum 2026 — All Rights Reserved ✦
